@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedoele</title>
+</head>
+<style>
+    h2::first-letter{
+        text-transform: capitalize;
+        color: red;
+
+    }
+    #one::first-line{
+        color: yellow;
+    }
+    h2::before{
+        content:"content befor used";
+    }
+    h2::after{
+        content: "after content";
+        color: red;
+    }
+    p::selection{
+        background:black;
+        color:red;
+    }
+
+</style>
+<body>
+    <div>
+        <h2>this is headtag1</h2>
+        <h2>this is headtag2</h2>
+        <h2>this is headtag3</h2>
+        <h2>this is headtag4</h2>
+        <p id="one">
+            a distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line
+            a distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line
+            a distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line
+        </p>
+    </div>
+    
+</body>
+</html>
